@@ -464,6 +464,9 @@ footer{
     .card{
         flex-basis: 49%;
     }
+    .btn-log{
+        margin-left: 10px;
+    }
     .category, .rest-time{
         display: none;
     }
