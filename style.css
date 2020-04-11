@@ -666,6 +666,21 @@ footer{
      .restaurant-header{
         flex-wrap: wrap;
     }
+    .food-name, .food-price{
+        font-size: 14px;
+    }
+      .final-price{
+        font-size: 14px;
+          padding: 15px 20px;
+          text-align: center;
+    }
+    .final-buttons{
+        flex-basis: 63%;
+    }
+    .modal-dialog{
+        padding: 20px;
+    }
+    
 }
 @media(max-width: 435px) and (min-width: 1px) and (orientation: portrait){
     .rest-search {
@@ -678,6 +693,29 @@ footer{
         padding-right: 5px;
         order: 5;
         flex: 1;
+    }
+    .final-buttons{
+        flex-basis: 63%;
+    }
+    .btn-log{
+        margin-left: 5px;
+    }
+    .modal-dialog{
+        padding: 20px;
+    }
+    .final-price{
+        font-size: 14px;
+          padding: 9px;
+        flex-basis: 31%;
+    }
+    .modal{
+        width: 100%;
+    }
+    .food-name, .food-price{
+        font-size: 14px;
+    }
+    .food-price{
+        margin-right: 17px;
     }
     .card-img{
         width: 100%;
