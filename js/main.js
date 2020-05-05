@@ -56,10 +56,15 @@ function notAutorized(){
       loginInput.style = "border: 2px solid red";
       passwordInput.style = "border: 2px solid red";
       return;
-    } else{
-      
+    } else if (!loginInput.value && passwordInput.value){
+      loginInput.style = "border: 2px solid red";
+      return;
+    } else if(loginInput.value && !passwordInput.value){
+      passwordInput.style = "border: 2px solid red";
+      return;
     }
     loginInput.style.border = '';
+    passwordInput.style.border = '';
     login = loginInput.value;
     localStorage.setItem('notOut', login);
     toggleModalAuth();
